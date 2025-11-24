@@ -10,6 +10,7 @@ class Tour:
 
     # RELAZIONE (N:N)
     attrazioni: set = field(default_factory=set)
+    valore_culturale_totale: int = 0
 
     def __eq__(self, other):
         return isinstance(other, Tour) and self.id == other.id
